@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>prevent_unpublish_location__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Prevent publishing a location if the location has associated classes published.</description>
+        <externalId>false</externalId>
+        <label>prevent unpublish a location</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><customSettingsType>Hierarchy</customSettingsType><description>Training validation rules</description><enableFeeds>false</enableFeeds><label>Training Validation Rule</label><visibility>Protected</visibility></CustomObject>

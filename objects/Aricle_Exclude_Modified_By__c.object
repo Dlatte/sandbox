@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>User_Name__c</fullName>
+        <description>User name to be excluded</description>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><customSettingsType>Hierarchy</customSettingsType><description>User's name to be excluded from populating custom MW Last Modified By field on Article</description><enableFeeds>false</enableFeeds><label>Article Exclude Modified By</label><visibility>Public</visibility></CustomObject>

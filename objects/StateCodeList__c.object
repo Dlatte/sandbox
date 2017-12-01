@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>CountryCode__c</fullName>
+        <externalId>false</externalId>
+        <label>CountryCode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>StateCodesUnderCountryCode__c</fullName>
+        <externalId>false</externalId>
+        <label>StateCodesUnderCountryCode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><customSettingsType>List</customSettingsType><description>statecodes of country requiring states</description><enableFeeds>false</enableFeeds><label>StateCodeList</label><visibility>Public</visibility></CustomObject>

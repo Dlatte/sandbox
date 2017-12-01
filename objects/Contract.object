@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Activate</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Terminate</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>ActivatedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>ActivatedDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>BillingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>CompanySignedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>CompanySignedId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>ContractTerm</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>CustomerSignedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>CustomerSignedId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>CustomerSignedTitle</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>Description</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>Name</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>OwnerExpirationNotice</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>ShippingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>SpecialTerms</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>StartDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>Status</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>ortoo_e2a__Thread_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>"ref:"&amp;
+LEFT( $Organization.Id , 4 )&amp;
+IF( BEGINS(RIGHT($Organization.Id,11), '0000000'), RIGHT($Organization.Id,4),
+IF( BEGINS(RIGHT($Organization.Id,11), '000000'), RIGHT($Organization.Id,5),
+IF( BEGINS(RIGHT($Organization.Id,11), '00000'), RIGHT($Organization.Id,6),
+IF( BEGINS(RIGHT($Organization.Id,11), '0000'), RIGHT($Organization.Id,7),
+IF( BEGINS(RIGHT($Organization.Id,11), '000'), RIGHT($Organization.Id,8),
+IF( BEGINS(RIGHT($Organization.Id,11), '00'), RIGHT($Organization.Id,9),
+IF( BEGINS(RIGHT($Organization.Id,11), '0'), RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11)
+)))))))
+&amp;"."&amp;LEFT( Id , 4 )&amp;
+
+IF(BEGINS(RIGHT(Id,11), '0000000'), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), '000000'), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), '00000'), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), '0000'), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), '000'), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), '00'), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), '0'), RIGHT(Id,10),
+RIGHT(Id,11)
+))))))) &amp;":ref"</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+        <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.STATUS</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SALES.ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><listViews>
+        <fullName>AllActivatedContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>All Activated Contracts</label>
+    </listViews><listViews>
+        <fullName>AllContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Contracts</label>
+    </listViews><listViews>
+        <fullName>AllDraftContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>D</value>
+        </filters>
+        <label>All Draft Contracts</label>
+    </listViews><listViews>
+        <fullName>AllInApprovalContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>All In Approval Contracts</label>
+    </listViews><listViews>
+        <fullName>MyActivatedContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>My Activated Contracts</label>
+    </listViews><listViews>
+        <fullName>MyDraftContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>D</value>
+        </filters>
+        <label>My Draft Contracts</label>
+    </listViews><listViews>
+        <fullName>MyInApprovalContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>My In Approval Contracts</label>
+    </listViews></CustomObject>

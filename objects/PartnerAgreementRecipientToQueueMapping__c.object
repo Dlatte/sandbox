@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Queue_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Queue Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Recipient_Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Recipient_Email_Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><customSettingsType>List</customSettingsType><enableFeeds>false</enableFeeds><label>UEH_PartnerAgree_RecipientToQueueMapping</label><visibility>Public</visibility></CustomObject>

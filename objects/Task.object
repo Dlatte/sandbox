@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>ActivityDate</fullName>
+    </fields><fields>
+        <fullName>CallDisposition</fullName>
+    </fields><fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields><fields>
+        <fullName>CallObject</fullName>
+    </fields><fields>
+        <fullName>CallType</fullName>
+    </fields><fields>
+        <fullName>Description</fullName>
+    </fields><fields>
+        <fullName>Email</fullName>
+    </fields><fields>
+        <fullName>IsRecurrence</fullName>
+    </fields><fields>
+        <fullName>IsReminderSet</fullName>
+    </fields><fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields><fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Phone</fullName>
+    </fields><fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields><fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields><fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>Subject</fullName>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>TaskSubtype</fullName>
+    </fields><fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><sharingModel>ControlledByParent</sharingModel><fieldSets>
+        <fullName>CRMC_PP__Batch_Add</fullName>
+        <description>Batch Add</description>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Batch Add</label>
+    </fieldSets><fieldSets>
+        <fullName>Task_Fields_On_Lead_Conversion</fullName>
+        <description>This will be used in custom lead conversion page for creating activity.</description>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>IsReminderSet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ReminderDateTime</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Task Fields On Lead Conversion</label>
+    </fieldSets><fieldSets>
+        <fullName>activities__CreateTasks</fullName>
+        <availableFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsRecurrence</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceActivityId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceDayOfMonth</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceDayOfWeekMask</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceInterval</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceMonthOfYear</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecurrenceRegeneratedType</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>WhatId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>WhoId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>CreateTasks</description>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CreateTasks</label>
+    </fieldSets><fieldSets>
+        <fullName>activities__MassUpdateTasks</fullName>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsReminderSet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>WhatId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>WhoId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>UpdateTasks</description>
+        <displayedFields>
+            <field>ActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ReminderDateTime</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Updated_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>MassUpdateTasks</label>
+    </fieldSets><validationRules>
+        <fullName>Change_Status_for_Escalation_Task</fullName>
+        <active>true</active>
+        <description>Validation if user tries to change the task type from Escalation to anything else without clicking on Take Ownership button</description>
+        <errorConditionFormula>AND (  ISCHANGED(Status), ISPICKVAL(Type, "Escalation"), ISPICKVAL(Status, "Completed"),NOT(ISBLANK(Case_Escalated_To_Value__c)))</errorConditionFormula>
+        <errorMessage>Click Cancel then Click Take Ownership of the Task before making edits</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Change_type_for_Escalation_Task</fullName>
+        <active>true</active>
+        <description>Validation if user tries to change the task type from Escalation to anything else without clicking on Take Ownership button</description>
+        <errorConditionFormula>AND ( NOT(ISNEW()), ISCHANGED(Type), NOT(ISPICKVAL(Type, "Escalation")), NOT(ISBLANK(Case_Escalated_To_Value__c)))</errorConditionFormula>
+        <errorMessage>Click Cancel then Click Take Ownership of the Task before making edits</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Escalation_Validation</fullName>
+        <active>true</active>
+        <description>Escalate To is required when Type is Escalation</description>
+        <errorConditionFormula>AND ( ISPICKVAL(Type, "Escalation"),  ISPICKVAL (Escalate_To__c, "") )</errorConditionFormula>
+        <errorDisplayField>Escalate_To__c</errorDisplayField>
+        <errorMessage>Escalate To is required for Escalation Type Task</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Sales_Support_Activity_Required_Time</fullName>
+        <active>true</active>
+        <description>When Sales Support Activity entered the time is required</description>
+        <errorConditionFormula>AND( ISBLANK( Sales_Support_Activity_Time__c ),  NOT( ISBLANK( TEXT(  Sales_Support_Activity_Type__c  ) ) )  )</errorConditionFormula>
+        <errorDisplayField>Sales_Support_Activity_Time__c</errorDisplayField>
+        <errorMessage>Sales Support Activity Time is required when selecting Sales Support Activity Type</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Sales_Support_Time_Required_Activity</fullName>
+        <active>true</active>
+        <description>When Sales Support Time entered the Sales Activity Support Type is required</description>
+        <errorConditionFormula>AND( NOT(ISBLANK( Sales_Support_Activity_Time__c )),   ISBLANK( TEXT(  Sales_Support_Activity_Type__c  )  )  )</errorConditionFormula>
+        <errorDisplayField>Sales_Support_Activity_Type__c</errorDisplayField>
+        <errorMessage>Sales Support Activity Type is required if entering Sales Support Activity Time</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Task_Call_Outcome_Required</fullName>
+        <active>true</active>
+        <description>Outcome of the call is required when closing(completed/sent) the task</description>
+        <errorConditionFormula>AND(
+      OR(
+          ISPICKVAL(Status, 'Completed') ,
+          ISPICKVAL(Status, 'Sent')
+       ),
+      ISPICKVAL(Type, 'Call - Outbound'),
+      ISBLANK(TEXT(Call_Outbound_Outcomes__c )),
+$Profile.Name &lt;&gt; "System Administrator", 
+$Profile.Name &lt;&gt; "MW Data Administratort",
+$Profile.Name &lt;&gt; "MW RAC Standard User", 
+$Profile.Name &lt;&gt; "MW Customer Service Standard User"
+)</errorConditionFormula>
+        <errorDisplayField>Call_Outbound_Outcomes__c</errorDisplayField>
+        <errorMessage>Outcome of the call is required when closing(completed/sent) the task</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Task_Email_Outcome_Required</fullName>
+        <active>false</active>
+        <description>Outcome of the email is required when closing(completed/sent) the task</description>
+        <errorConditionFormula>AND(
+     OR(
+         ISPICKVAL(Status, 'Completed'),
+         ISPICKVAL(Status, 'Sent')
+     ),
+     ISPICKVAL(Type, 'Email'),
+     ISBLANK(TEXT(Email_Outbound_Outcomes__c ))
+)</errorConditionFormula>
+        <errorDisplayField>Email_Outbound_Outcomes__c</errorDisplayField>
+        <errorMessage>Outcome of the email is required when closing(completed/sent) the task</errorMessage>
+    </validationRules><webLinks>
+        <fullName>Mass_update_tasks</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Update Tasks</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/20.0/connection.js")}
+{!REQUIRESCRIPT("/support/console/30.0/integration.js")}
+var records =  {!GETRECORDIDS( $ObjectType.Task)};
+var returnURL = window.location.href;
+
+
+if(records != null &amp;&amp; records != ''){
+if (sforce.console.isInConsole()) {
+returnURL = 'apex/Activity_mass_update_confirmation';
+var consoleURL = '/apex/activities__UpdateTasks?Ids='+records+'&amp;retURL='+returnURL;
+sforce.console.openPrimaryTab(null,consoleURL , true, 'Mass Update Tasks', null, 'MassUpdateTasksTab');
+
+} 
+else
+{
+window.open('/apex/activities__UpdateTasks?Ids='+records+'&amp;retURL='+returnURL , '_top',                                            'height=400,width=600,status=yes,toolbar=yes,menubar=yes,location=no,center=yes,resizable=no');
+}
+
+}else{
+    alert('Please select atleast one task.');
+}</url>
+    </webLinks><webLinks>
+        <fullName>Take_Ownership</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT("/soap/ajax/10.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/10.0/apex.js")}
+
+
+
+sforce.apex.execute("CustomButtonFunctions","TakeOwnership",
+	{caseId:"{!Task.Id}",
+	userId:"{!User.Id}"});
+	location.reload();
+
+/*if({!Case.IsEscalated}==true){
+	location.reload();
+}else{
+	alert('Cannot take ownership');
+}*/</url>
+    </webLinks><webLinks>
+        <fullName>activities__CloseTasks</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Close Tasks</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/38.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/38.0/apex.js")}
+var left = (screen.width/2)-(320/2);
+var top = (screen.height/2)-(200/2);
+var records = {!GETRECORDIDS($ObjectType.Task)};
+var strIDs='';
+if (records[0] == null)
+{
+alert('Please select atleast one record');
+}
+else
+{
+for (var n=0; n&lt;records.length; n++)
+{
+if(strIDs == '')
+strIDs = records[n];
+else
+strIDs = strIDs + "," + records[n];
+}
+window.location.href = '/apex/activities__CloseTasks?strIDs='+strIDs+'&amp;retURL='+ window.location.href;
+}</url>
+    </webLinks><webLinks>
+        <fullName>activities__Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Update Tasks</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/38.0/connection.js")}
+var records =  {!GETRECORDIDS( $ObjectType.Task)};
+var returnURL = window.location.href;
+if(records != null &amp;&amp; records != ''){
+     mywin = window.open('/apex/activities__UpdateTasks?Ids='+records+'&amp;retURL='+returnURL , '_top',
+                                             'height=400,width=600,status=yes,toolbar=no,menubar=no,location=no,center=yes,resizable=no');
+     mywin.focus();
+}else{
+    alert('Please select atleast one task.');
+}</url>
+    </webLinks></CustomObject>

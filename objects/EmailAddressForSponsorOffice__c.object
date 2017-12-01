@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Email__c</fullName>
+        <description>stores the email Address for Sponsor office</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><customSettingsType>List</customSettingsType><description>This custom Setting stores the Email address for Sponsor Office for those not having Email address</description><enableFeeds>false</enableFeeds><label>EmailAddressForSponsorOffice</label><visibility>Public</visibility></CustomObject>
